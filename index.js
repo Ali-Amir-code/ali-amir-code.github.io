@@ -2,7 +2,7 @@
 // Typing Effect
 document.addEventListener('DOMContentLoaded', function () {
     const typedTextSpan = document.querySelector('.typed-text');
-    const textArray = ['Alex Morgan', 'a Developer', 'a Designer', 'a Creator'];
+    const textArray = ['Ali Amir', 'a Developer', 'a Designer', 'a Creator'];
     const typingDelay = 200;
     const erasingDelay = 100;
     const newTextDelay = 2000;

@@ -2,8 +2,8 @@
 // Typing Effect
 document.addEventListener('DOMContentLoaded', function () {
     const typedTextSpan = document.querySelector('.typed-text');
-    const textArray = ['Ali Amir', 'a Developer', 'a Designer', 'a Creator'];
-    const typingDelay = 200;
+    const textArray = ['Ali Amir', 'a Developer', 'an Enthusiastic', 'a Creator'];
+    const typingDelay = 150;
     const erasingDelay = 100;
     const newTextDelay = 2000;
     let textArrayIndex = 0;
@@ -114,27 +114,6 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', animateOnScroll);
     // Trigger on load in case elements are already in view
     animateOnScroll();
-
-    // Form Submission
-    const contactForm = document.getElementById('contactForm');
-
-    contactForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-
-        // Get form values
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-
-        // In a real application, you would send this data to a server
-        console.log('Form submitted:', { name, email, message });
-
-        // Show success message
-        alert('Thank you for your message! I will get back to you soon.');
-
-        // Reset form
-        contactForm.reset();
-    });
 
     // Active navigation link on scroll
     window.addEventListener('scroll', () => {

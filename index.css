@@ -97,8 +97,8 @@ a {
 
 .btn-outline {
   background: transparent;
-  border: 2px solid var(--primary);
-  color: var(--primary);
+  border: 2px solid var(--light);
+  color: var(--light);
   margin-left: 15px;
 }
 
@@ -361,10 +361,21 @@ nav {
 .project-content {
   padding: 25px;
 }
-
+.project-heading{
+  display: flex;
+  gap: 20px;
+}
 .project-content h3 {
   font-size: 1.4rem;
   margin-bottom: 10px;
+}
+.project-heading .year-badge {
+  background: var(--gray);
+  color: var(--light);
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  font-weight: 500;
 }
 
 .project-tags {
@@ -494,9 +505,9 @@ nav {
 }
 
 .contact-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .contact-info {
@@ -750,7 +761,4 @@ footer {
     margin-left: 0;
   }
 
-  .contact-container {
-    grid-template-columns: 1fr;
-  }
 }
